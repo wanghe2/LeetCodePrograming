@@ -12,6 +12,10 @@ public class MyLinkNode<T> {
         return val;
     }
 
+    public void setVal(T val){
+        this.val = val;
+    }
+
     public MyLinkNode(T data) throws Exception {
         if(data == null){
             throw new Exception("值不能为空");

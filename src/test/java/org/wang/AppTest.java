@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.wang.entity.MyLinkNode;
 import org.wang.entity.MyTreeNode;
 import org.wang.function.SectionOne;
+import org.wang.function.SectionThree;
 import org.wang.function.SectionTwo;
 
 public class AppTest 
@@ -37,7 +38,6 @@ public class AppTest
 //        sectionOne.fun9(1994);
     }
 
-    @Test
     public void sectionTwo() throws Exception {
         SectionTwo sectionTwo = new SectionTwo();
 
@@ -72,9 +72,26 @@ public class AppTest
 
 //          sectionTwo.fun7(20);
 
-          sectionTwo.fun8(new int[]{1,2,4,5,6,12,17,19,23,25,27,30,32,36},23);
+//          sectionTwo.fun8(new int[]{1,2,4,5,6,12,17,19,23,25,27,30,32,36},23);
     }
 
+    @Test
+    public void testThree() throws Exception {
+        SectionThree sectionThree = new SectionThree();
+
+//        sectionThree.fun1(20);
+
+//        MyLinkNode<Integer> headNode = new MyLinkNode<>(20);
+//        MyLinkNode<Integer> toDelNode =  new MyLinkNode<Integer>(36);
+//        headNode.setNext(new MyLinkNode<Integer>(30)).setNext(toDelNode).setNext(new MyLinkNode<Integer>(48)).setNext(new MyLinkNode<Integer>(59));
+//        sectionThree.fun2(headNode,toDelNode);
+
+//        sectionThree.fun3(new int[]{2 , 4, 12 , 24, 23, 21,32,3,5,27});
+
+        MyLinkNode<String> headNode = new MyLinkNode<>("a");
+        headNode.setNext(new MyLinkNode<String>("b")).setNext(new MyLinkNode<String>("c")).setNext(new MyLinkNode<String>("d")).setNext(new MyLinkNode<String>("e"));
+        sectionThree.fun4(headNode);
+    }
 
 
 
